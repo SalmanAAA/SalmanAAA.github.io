@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+th, td {
+    padding: 12px; /* Jarak dalam sel */
+    text-align: center; /* Menyusun teks ke tengah */
+    border: 1px solid #ddd; /* Garis border */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin-top: 10px;  
+    background-color: #333; 
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block; 
+    padding: 10px 20px; 
+    transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #50b3a2; 
+    background-color: rgba(80, 179, 162, 0.3); 
+    transform: scale(1.1); 
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+article#datascrapping h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+article#datascrapping p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+article#tentang img {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    display : block;
+    margin : 0 auto;
+}
+article#tentang {
+    display: flex;
+    justify-content: center; 
+    align-items: left; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+article#keterampilan {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    margin: 20px; 
+}
+article#Lesson_Learned {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    margin: 20px; 
+}
+article#pengalaman {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+    margin: 20px; 
+}
+article#pengalaman ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+footer ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/*Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+    }
+}
